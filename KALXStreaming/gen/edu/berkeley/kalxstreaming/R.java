@@ -27,25 +27,25 @@ public final class R {
     public static final class drawable {
         public static final int backgroundrevision2=0x7f020000;
         public static final int call_long=0x7f020001;
-        public static final int facebook_long=0x7f020002;
-        public static final int facebookbutton=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int mutebutton=0x7f020005;
-        public static final int playbutton=0x7f020006;
-        public static final int stopbutton=0x7f020007;
-        public static final int twitter_long=0x7f020008;
-        public static final int twitterbutton=0x7f020009;
-        public static final int unmutebutton=0x7f02000a;
+        public static final int facebook_page=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int mutebutton=0x7f020004;
+        public static final int playbutton=0x7f020005;
+        public static final int stopbutton=0x7f020006;
+        public static final int twitter_page=0x7f020007;
+        public static final int twitter_playlist=0x7f020008;
+        public static final int unmutebutton=0x7f020009;
     }
     public static final class id {
-        public static final int Disclaimer=0x7f090007;
-        public static final int Quit=0x7f090008;
-        public static final int facebookButton=0x7f090005;
+        public static final int Disclaimer=0x7f090008;
+        public static final int Quit=0x7f090009;
+        public static final int facebookButton=0x7f090006;
         public static final int kalxLogo=0x7f090000;
         public static final int muteUnmute=0x7f090003;
-        public static final int phone=0x7f090006;
+        public static final int phone=0x7f090007;
         public static final int playStopButton=0x7f090001;
-        public static final int twitterButton=0x7f090004;
+        public static final int twitterButton=0x7f090005;
+        public static final int twitterPlaylist=0x7f090004;
         public static final int volumeBar=0x7f090002;
     }
     public static final class layout {
