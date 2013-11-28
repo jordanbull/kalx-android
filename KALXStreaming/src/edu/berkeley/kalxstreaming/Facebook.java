@@ -8,12 +8,13 @@ import android.net.Uri;
 public class Facebook {
 
 	public static void openKALXFacebook(Activity activity) {
+
 		try {
-			activity.getPackageManager().getApplicationInfo("com.facebook.android", 0 );
-			String facebookScheme = "fb://profile/" + "8422996124";
-			Intent facebookIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(facebookScheme)); 
-			activity.startActivity(facebookIntent);
-		} catch (NameNotFoundException e) {
+			final String urlFb = "fb://page/"+"8422996124";
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(urlFb));
+            activity.startActivity(intent);
+		} catch (Exception e) {
 		    // If Facebook app is not installed, start browser.
 		    activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/90.7fm")));
 		}

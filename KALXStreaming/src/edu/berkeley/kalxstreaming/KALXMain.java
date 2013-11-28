@@ -137,40 +137,26 @@ public class KALXMain extends Activity {
 		startActivity(intent);
 	}
 	public void openTwitter(View v) {
-		try
-		{
-		    // Check if the Twitter app is installed on the phone.
-		    getPackageManager().getPackageInfo("com.twitter.android", 0);
+        try {
+            Intent intent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("twitter://user?screen_name=KALXradio"));
+            startActivity(intent);
 
-		    Intent intent = new Intent(Intent.ACTION_VIEW);
-		    intent.setClassName("com.twitter.android", "com.twitter.android.ProfileActivity");
-		    // Don't forget to put the "L" at the end of the id.
-		    intent.putExtra("user_id", 38070896L);
-		    startActivity(intent);
-		}
-		catch (NameNotFoundException e)
-		{
-		    // If Twitter app is not installed, start browser.
-		    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/KALXradio")));
-		}
+        }catch (Exception e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://twitter.com/#!/KALXradio")));
+        }
 	}
 	public void openTwitterPlaylist(View v) {
-		try
-		{
-		    // Check if the Twitter app is installed on the phone.
-		    getPackageManager().getPackageInfo("com.twitter.android", 0);
+        try {
+            Intent intent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("twitter://user?screen_name=KALXplaylist"));
+            startActivity(intent);
 
-		    Intent intent = new Intent(Intent.ACTION_VIEW);
-		    intent.setClassName("com.twitter.android", "com.twitter.android.ProfileActivity");
-		    // Don't forget to put the "L" at the end of the id.
-		    intent.putExtra("user_id", 38070896L);
-		    startActivity(intent);
-		}
-		catch (NameNotFoundException e)
-		{
-		    // If Twitter app is not installed, start browser.
-		    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/KALXplaylist")));
-		}
+        }catch (Exception e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://twitter.com/#!/KALXplaylist")));
+        }
 	}
 
 }
