@@ -4,7 +4,6 @@
     <string name="app_name">KALX Streaming</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="disclaimer">This app allows you to listen to KALX Berkeley 90.7 FM radio on your Android phone.\n\n
-            KALX Berkeley 90.7 FM broadcasts freeform radio 24 hours a day to the San Francisco Bay Area. It is a University of California and listener-supported radio station with a focus on alternative programming. KALX Berkeley 90.7 FM is licensed to the Regents of the University of California.</string>
+    <string name="disclaimer">This app allows you to listen to KALX Berkeley 90.7 FM radio on your Android device.\n\nKALX Berkeley 90.7 FM broadcasts freeform radio 24 hours a day to the San Francisco Bay Area. It is a University of California and listener-supported radio station with a focus on alternative programming. KALX Berkeley 90.7 FM is licensed to the Regents of the University of California.</string>
 
 </resources>
